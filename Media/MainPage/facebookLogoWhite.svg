@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 16">
+  <defs>
+    <style>
+      svg{
+        fill:#fff;
+        transition: all 0.5s;
+      }
+
+      svg:hover {
+        transform:scale(0.7);
+        cursor:pointer;
+      }
+    </style>
+  </defs>
+  <a href="https://www.facebook.com/OCIPGROUP/"
+      target="_blank">
+  <path d="M7.1 8H4.9v8H1.6V8H0V5.2h1.6V3.3C1.6 2 2.2 0 4.9 0h2.5v2.7H5.6c-.3 0-.7.1-.7.8v1.7h2.5L7.1 8z"/>
+  </a>
+</svg>

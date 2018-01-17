@@ -1,0 +1,825 @@
+body, h1, h2, h3, h4, h5, h6, p{
+margin: 0;
+padding: 0;
+}
+
+p{
+ font-family: 'Lato', sans-serif;
+ line-height: 160%;
+ font-size: 18px;
+ font-weight: 300;
+}
+
+/* main color green - #1ebec0 */
+
+/* ==========================================
+            NAVIGATION FROM HERE
+=========================================== */
+nav{
+  width: 250px;
+  height: 100vh;
+  background-color: #10131a;
+  z-index: 9;
+  position: fixed;
+  border-right: 2px solid #1ebec0;
+  margin-left: -252px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.navToggle{
+  animation-name: showMenu;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+@keyframes showMenu {
+    from {margin-left: -252px;}
+      to {margin-left: 0px;}
+}
+
+#hamburgerMenuHolder{
+  width: 35px;
+  height: 25px;
+  position: fixed;
+  z-index: 10;
+  left: 20px;
+  top: 20px;
+}
+
+#barOne, #barTwo, #barThree {
+    width: 30px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #1ebec0;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change #barOne {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change #barTwo {opacity: 0;}
+
+.change #barThree {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+
+h3{
+  color: white;
+  font-family: 'Boogaloo', cursive;
+  font-size: 36px;
+}
+
+hr{
+  width: 80%;
+  border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(165, 165, 165, 0), rgba(165, 165, 165, 0.75), rgba(165, 165, 165, 0));
+}
+
+nav ul{
+list-style-type: none;
+padding: 0px;
+text-align: left;
+}
+
+nav ul li{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 85px;
+}
+
+nav ul li a{
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
+  animation-name: navMenuAnimation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards;
+}
+
+.navMenu:hover:after{
+content: "";
+background: url("../Media/MainPage/arrowRightBlue.svg") no-repeat;
+width: 24px;
+height: 24px;
+float: right;
+}
+
+
+@keyframes navMenuAnimation {
+  0%   {color: #1ebec0;}
+  30% {color: white;}
+  50% {color: #1ebec0;}
+  70% {color: white;}
+  100% { color: #1ebec0; }
+}
+
+
+/* ==========================================
+              HEADER FROM HERE
+=========================================== */
+
+#header{
+  width: 100%;
+  height: 70vh;
+  min-height: 550px;
+  padding-top: 30vh;
+  background: url("../Media/MainPage/main_image.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  animation: backgroundMoves 6s linear infinite;
+}
+
+#headerH1{
+  animation-name: headerH1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+
+#headerH1:hover{
+  color: #1ebec0;
+}
+
+#headerH2{
+  animation-name: headerH2;
+  animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 2;
+}
+
+h1, h2{
+  color: white;
+  font-family: 'Boogaloo', cursive;
+}
+
+h1{
+  font-size: 90px;
+}
+
+h2{
+  font-size: 47px;
+  padding-bottom: 40px;
+}
+
+.greenColor{
+  color: #1ebec0;
+}
+
+button{
+  width: 140px;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Boogaloo', cursive;
+}
+
+#contactButtonGreen{
+  background-color: #1ebec0;
+  color: white;
+  margin-right: 20px;
+  transition: all 0.5s;
+}
+
+#contactButtonGreen:hover{
+  cursor: pointer;
+  box-shadow: inset 140px 0px 0 0 #084444;
+}
+
+.greenBorderNoBackgroundButton{
+  border: 1px solid #1ebec0;
+  background: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.greenBorderNoBackgroundButton:hover{
+  cursor: pointer;
+  box-shadow: inset 140px 0px 0 0 #1ebec0;
+  color: black;
+}
+
+#arrowDownHolder{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin: auto;
+  margin-left: -50px;
+  background: url(../Media/MainPage/arrowDownBlue.svg) no-repeat;
+  animation: bounce 2s infinite;
+}
+
+#arrowDownHolder:hover{
+cursor: pointer;
+}
+
+@keyframes bounce {
+0%, 20% {transform: translateY(0);}
+40% {transform: translateY(-30px);}
+50% {transform: translateY(0);}
+60% {transform: translateY(-15px);}
+80%, 100% {transform: translateY(0);}
+}
+
+@keyframes headerH1 {
+0%, 10% {opacity: 0; }
+20%,80% {opacity: 1; }
+85%,100% {opacity: 0;}
+}
+
+@keyframes headerH2 {
+0%, 30% {opacity: 0; }
+40%, 90% {opacity: 1; }
+95%, 100% {opacity: 0;}
+}
+
+@keyframes backgroundMoves {
+  0%   { background-size: 100% 100%; }
+  20% { background-size: 102% 100%; }
+  50% { background-size: 106% 100%; }
+  70% { background-size: 102% 100%; }
+  100% { background-size: 100% 100%; }
+}
+
+
+/* ==========================================
+            SERVICES FROM HERE
+=========================================== */
+
+#serviceHolder{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  overflow: auto;
+}
+
+#servicesInnerHolder{
+  width: 1280px;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#serviceHolder h1{
+  color: #12151b;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#spannerImageHolder{
+  width: 30%;
+  height: auto;
+  float: left;
+}
+
+#spannerImage{
+  width: 400px;
+  height: auto;
+}
+
+#serviceTextHolder{
+  width: 45%;
+  margin-left: 10%;
+  height: auto;
+  float: left;
+  text-align: left;
+}
+
+#serviceTextHolder p{
+  padding-bottom: 30px;
+}
+
+.blackBorderNoBackgroundButton{
+  border: 1px solid #12151b;
+  background: none;
+  color: #12151b;
+  transition: all 0.5s;
+}
+
+.blackBorderNoBackgroundButton:hover{
+  cursor: pointer;
+  box-shadow: inset 140px 0px 0 0 #12151b;
+  color: white;
+}
+
+
+/* ==========================================
+            PORTFOLIO FROM HERE
+=========================================== */
+#portfolioHolder{
+  width: 100%;
+  height: auto;
+  background-color: #12151b;
+  overflow: auto;
+}
+
+#portfolioInnerHolder{
+  width: 1280px;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#portfolioInnerHolder h1{
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#portfolioTextHolder{
+  width: 45%;
+  margin-right: 10%;
+  margin-left: 50px;
+  height: auto;
+  float: left;
+  text-align: left;
+  color: white;
+}
+
+#portfolioTextHolder p{
+  padding-bottom: 30px;
+}
+
+#porfolioImageHolder{
+  width: 30%;
+  height: auto;
+  float: left;
+  padding-bottom: 50px;
+}
+
+#porfolioImageHolder img{
+  width: 400px;
+  height: auto;
+  transition: 1s;
+}
+
+#porfolioImageHolder img:hover{
+  opacity: .7;
+}
+
+
+.whiteBorderNoBackgroundButton{
+  border: 1px solid white;
+  background: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.whiteBorderNoBackgroundButton:hover{
+  cursor: pointer;
+  box-shadow: inset 140px 0px 0 0 white;
+  color: #12151b;
+}
+
+
+
+/* ==========================================
+            HELLO - CONTACT FROM HERE
+=========================================== */
+#contactHelloHolder{
+width: 100%;
+height: auto;
+overflow: auto;
+}
+
+#contactHelloInnerHolder{
+  width: 1280px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#contactHelloInnerHolder h1{
+color: #12151b;
+padding-top: 40px;
+}
+
+#envelopImageHolder{
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#envelopImageHolder img{
+  width: 500px;
+  height: auto;
+}
+
+#contactHelloTextHolder{
+  width: 45%;
+  margin-left: 10%;
+  float: left;
+  text-align: left;
+}
+
+#contactHelloTextHolder p{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+a[href^="mailto"] {
+  color: #1ebec0;
+}
+
+/* ==========================================
+            CONTACT FORM FROM HERE
+=========================================== */
+
+#contactFormHolder{
+  width: 100%;
+  height: auto;
+  background-color: #12151b;
+}
+
+#contactFormInnerHolder{
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+#contactFormInnerHolder h1{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#interestedWorkingWithUs{
+  text-align: left;
+  color: white;
+  padding-bottom: 50px;
+}
+
+#phoneLink{
+  color: #1ebec0;
+}
+
+form{
+  padding-bottom: 50px;
+}
+
+input, textarea {
+  width: 100%;
+  padding-bottom: 30px;
+  font-size: 18px;
+  -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance: none;
+   background-color: #12151b;
+   border: none;
+   color: white;
+   font-weight: 300;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea{
+  height: 100px;
+  resize: none;
+  border-radius: 0px;
+}
+
+input{
+  border-bottom: 0.3px solid gray;
+  margin-bottom: 30px;
+  border-radius: 0px;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: gray;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: gray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+    color: gray;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+
+#submitFormButton{
+  width: 140px;
+  height: 30px;
+  padding-top: 10px;
+  border: 1px solid #1ebec0;
+  background: none;
+  color: white;
+  transition: all 0.5s;
+  font-size: 18px;
+  font-family: 'Boogaloo', cursive;
+}
+
+
+#submitFormButton:hover{
+  cursor: pointer;
+  box-shadow: inset 140px 0px 0 0 #1ebec0;
+  color: black;
+}
+
+
+#requiredFieldsMessage{
+  color: white;
+  background-color: #ef5656;
+  border-left: 4px solid darkred;
+  border-radius: 3px;
+  padding: 3px 0px 3px 3px;
+  text-align: left;
+  width: 250px;
+  display: none;
+  max-width: 100%;
+  margin-top: -40px;
+}
+
+#errorMessage{
+  color: white;
+  background-color: #ef5656;
+  border-left: 4px solid darkred;
+  border-radius: 3px;
+  padding: 3px 0px 3px 3px;
+  text-align: left;
+  width: 250px;
+  display: block;
+  max-width: 100%;
+  margin-top: -40px;
+}
+
+#successFormMessagePHP{
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  background-color: #079e3c;
+  border-left: 4px solid #386031;
+  border-radius: 3px;
+  padding: 3px 0px 3px 3px;
+  text-align: left;
+  width: 600px;
+  max-width: 100%;
+  margin-top: -40px;
+}
+
+.placeholderText::-webkit-input-placeholder{
+  color: #ef5656;
+}
+
+/* ==========================================
+            FOOTER FORM FROM HERE
+=========================================== */
+
+#desktopFooter{
+  background-color: #0b0e11;
+  overflow: auto;
+}
+
+#footerHolder{
+  width: 1280px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#desktopFooter p{
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 100%;
+  padding-top: 37px;
+  padding-bottom: 40px;
+}
+
+#desktopFooter ul{
+  margin: 0px;
+}
+
+#desktopFooter ul li{
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 300;
+  padding-top: 35px;
+}
+
+#holderForRightsFooter{
+width: 240px;
+float: left;
+}
+
+#holderForNavFooter{
+  width: 400px;
+  float: left;
+}
+
+#holderForNavFooter ul li a{
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+
+#holderForNavFooter ul li a:hover{
+  color: #1ebec0;
+}
+
+#holderForSocialIconsFooter{
+  width: 170px;
+  height: 50px;
+  float: right;
+}
+
+.socialIconHolder{
+  width: 20px;
+  margin-top: 26px;
+  padding: 10px;
+  height: 20px;
+  float: right;
+}
+
+#facebookIcon{
+  background: url("../Media/MainPage/facebookLogoWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px 6px;
+}
+
+#linkedinIcon{
+  background: url("../Media/MainPage/linkedinIconWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px;
+}
+
+#twitterIcon{
+  background: url("../Media/MainPage/twitterIconWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px 15px;
+}
+
+#instagramIcon{
+  background: url("../Media/MainPage/instagramIconWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px 12px;
+}
+
+#phoneFooter{
+  display: none;
+}
+
+/*================================
+      404 PAGE FROM HERE
+================================*/
+h3{
+  font-size: 24px;
+  line-height: 160%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+#header404Button{
+  margin-top: 30px;
+}
+
+
+/*================================
+      PORTFOLIO PAGE FROM HERE
+================================*/
+
+#portfoiloHeaderHolder{
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  background: url("../Media/Portfolio/portfolio_main_image.jpg") no-repeat;
+  background-position: 0px 100px;
+  transform: rotate(1deg);
+  margin-bottom: 100px;
+  text-align: center;
+  box-shadow: 0px 1px 10px 5px lightgray;
+  border-radius: 10px;
+}
+
+#porfolioH1{
+padding-top: 0px;
+color: #12151b;
+}
+
+#ocipHolder{
+  width: 1280px;
+  max-width: 100%;
+  overflow: auto;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#holderForOcipText{
+width: 40%;
+padding-left: 5%;
+padding-right: 5%;
+height: 400px;
+float: left;
+}
+
+#holderForBrowserImage{
+  width: 50%;
+  float: left;
+  background-size: 100% auto;
+}
+
+#holderForBrowserImage img{
+  width: 90%;
+  height: auto;
+  box-shadow: 2px 5px 10px lightgray;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+#holderForBrowserImage img:hover{
+  box-shadow: 8px 10px 20px lightgray;
+}
+
+#holderForOcipText h1{
+  color: #12151b;
+}
+
+#holderForOcipText p{
+  padding-bottom: 40px;
+}
+
+
+#daciHolder{
+  width: 1280px;
+  max-width: 100%;
+  overflow: auto;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#holderForPhoneImage{
+  width: 30%;
+  margin-left: 10%;
+  float: left;
+
+}
+
+#holderForPhoneImage img{
+  border-radius: 35px;
+  box-shadow: 1px 2px 2px lightgray;
+  transition: .5s;
+}
+
+#holderForPhoneImage img:hover{
+  box-shadow: 4px 5px 10px lightgray;
+}
+
+#holderForDaciText h1{
+  color: #12151b;
+}
+
+#holderForDaciText{
+  width: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 400px;
+  float: left;
+}
+
+#holderForDaciText p{
+  padding-bottom: 40px;
+}

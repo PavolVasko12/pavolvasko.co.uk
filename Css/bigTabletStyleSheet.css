@@ -1,0 +1,76 @@
+@media screen and (max-width: 1000px) {
+
+#spannerImage{
+  width: 300px;
+}
+
+#serviceHolder{
+  padding-bottom: 40px;
+}
+
+#serviceTextHolder{
+  width: 60%;
+  margin-left: 5%;
+}
+
+#porfolioImageHolder img{
+  width: 250px;
+}
+#portfolioTextHolder{
+  width: 60%;
+  margin-right: 5%;
+  margin-left: 30px;
+}
+
+#envelopImageHolder img{
+  width: 300px;
+}
+#contactHelloTextHolder{
+  width: 60%;
+  margin-left: 5%;
+}
+
+#holderForNavFooter ul{
+  padding-left: 0px;
+}
+
+#contactFormInnerHolder{
+  width: 700px;
+}
+
+#holderForNavFooter{
+  width: 360px;
+}
+
+#phoneFooter{
+  display: none;
+}
+
+/*=========================
+        PORTFOLIO
+===========================*/
+#portfoiloHeaderHolder{
+  width: 100%;
+  background-size: 100%;
+  background-position: 0% 0%;
+  height: 500px;
+}
+
+#porfolioH1{
+  padding-top: 220px;
+}
+
+#holderForOcipText h1,#holderForDaciText h1{
+  font-size: 80px;
+}
+
+#holderForDaciText h1{
+  margin-top: 30px;
+}
+
+#holderForBrowserImage img{
+  margin-top: 30px;
+}
+
+
+}

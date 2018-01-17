@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://www.pavolvasko.co.uk</loc>
+    <image:image>
+       <image:loc>http://www.pavolvasko.co.uk/Media/MainPage/spanner_image.png</image:loc>
+       <image:caption>Services image - spanner image for the servcies.</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://www.pavolvasko.co.uk/Media/MainPage/portfolio_mac_ocip.png</image:loc>
+       <image:caption>Ocip-Group desktop image, example of the design and development</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://www.pavolvasko.co.uk/Media/MainPage/envelope_desktop.png</image:loc>
+       <image:caption>Hello image of an envelope for contact me</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://www.pavolvasko.co.uk/portfolio.php</loc>
+    <image:image>
+       <image:loc>http://www.pavolvasko.co.uk/Media/Portfolio/ocip_browser_image.png</image:loc>
+       <image:caption>Ocip-Group browser image, example of the design and development</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://www.pavolvasko.co.uk/Media/Portfolio/daci_iphone_image.png</image:loc>
+       <image:caption>Daci mobile image, example of the design and development</image:caption>
+    </image:image>
+  </url>
+</urlset>

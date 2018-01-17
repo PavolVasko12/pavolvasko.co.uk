@@ -1,0 +1,148 @@
+@media screen and (max-width: 800px) {
+
+#spannerImage{
+  width: 200px;
+  padding-top: 40px;
+}
+
+#porfolioImageHolder img{
+  width: 190px;
+}
+
+#portfolioHolder{
+  padding-bottom: 30px;
+}
+
+#envelopImageHolder img{
+  width: 200px;
+  padding-top: 40px;
+}
+
+#contactHelloHolder{
+  padding-bottom: 40px;
+}
+
+#contactFormInnerHolder{
+  width: 550px;
+}
+
+
+
+/*============================
+    FOOTER phoneFooter
+=============================*/
+#desktopFooter{
+  display: none;
+}
+
+
+#phoneFooter{
+  display: block;
+  width: 100%;
+  background-color: #0b0e11;
+  overflow: auto;
+}
+
+#phoneFooter p{
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 100%;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+#phoneFooter ul{
+  margin: 0px;
+}
+
+#phoneFooter ul li{
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+#holderForRightsFooter{
+width: 100%;
+text-align: center;
+}
+
+#holderForNavFooter{
+  width: 100%;
+  text-align: center;
+}
+
+#holderForSocialIconsFooter{
+    width: 170px;
+    margin: auto;
+    height: 50px;
+    float: none;
+}
+
+.socialIconHolder{
+  width: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  height: 20px;
+  float: right;
+}
+
+#facebookIcon{
+  background: url("../Media/MainPage/facebookLogoWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px;
+}
+
+#linkedinIcon{
+  background: url("../Media/MainPage/linkedinIconWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px;
+}
+
+#twitterIcon{
+  background: url("../Media/MainPage/twitterIconWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px;
+}
+
+#instagramIcon{
+  background: url("../Media/MainPage/instagramIconWhite.svg") no-repeat;
+  background-size: 20px auto;
+  background-position: 10px;
+}
+
+
+/*==============================
+        Portfolio
+============================== */
+#portfoiloHeaderHolder{
+  height: 400px;
+}
+
+#ocipHolder, #daciHolder{
+  padding-top: 0px;
+}
+
+#holderForPhoneImage img{
+  width: 160px;
+  margin-top: 60px;
+}
+
+#holderForOcipText h1, #holderForDaciText h1{
+  font-size: 50px;
+}
+
+#holderForBrowserImage img{
+  margin-top: 60px;
+}
+
+#porfolioH1{
+  padding-top: 140px;
+}
+
+}

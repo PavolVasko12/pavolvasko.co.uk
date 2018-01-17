@@ -1,0 +1,225 @@
+@media screen and (max-width: 600px) {
+  /* ==========================================
+                HEADER FROM HERE
+  =========================================== */
+
+  #header{
+    background: url("../Media/MainPage/main_image_phone.jpg") no-repeat;
+    text-align: left;
+    padding-left: 0%;
+    min-height: 450px;
+  }
+
+
+  h1{
+    font-size: 60px;
+    margin-left: 5%;
+  }
+
+  h2{
+    font-size: 30px;
+    margin-left: 5%;
+  }
+  #contactButtonGreen{
+    margin-left: 5%;
+  }
+
+
+  #arrowDownHolder{
+    width: 80px;
+    margin-left: -40px;
+  }
+
+
+  /* ==========================================
+              SERVICES FROM HERE
+  =========================================== */
+
+  #serviceHolder{
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+
+  #servicesInnerHolder{
+    text-align: left;
+  }
+
+  #serviceHolder h1{
+    margin-left: 0%;
+    padding-bottom: 10px;
+  }
+
+  #spannerImageHolder{
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  #spannerImage{
+    width: 80%;
+    padding-top: 0px;
+    margin-left: -7%;
+  }
+
+  #serviceTextHolder{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #serviceTextHolder p{
+    padding-bottom: 30px;
+  }
+
+  /* ==========================================
+              PORTFOLIO FROM HERE
+  =========================================== */
+  #portfolioHolder{
+    width: 100%;
+    height: auto;
+    background-color: #12151b;
+    overflow: auto;
+  }
+
+  #portfolioInnerHolder{
+    text-align: left;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  #portfolioInnerHolder h1{
+    margin-left: 0%;
+  }
+
+  #portfolioTextHolder{
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0px;
+  }
+
+  #portfolioTextHolder p{
+    padding-bottom: 30px;
+  }
+
+  #porfolioImageHolder{
+    width: 100%;
+  }
+
+  #porfolioImageHolder img{
+    width: 80%;
+    padding-top: 40px;
+  }
+
+  /* ==========================================
+              HELLO - CONTACT FROM HERE
+  =========================================== */
+  #contactHelloHolder{
+  width: 90%;
+  margin-left: 5%;
+  }
+
+  #contactHelloInnerHolder{
+    text-align: left;
+  }
+
+  #contactHelloInnerHolder h1{
+  color: #12151b;
+  padding-top: 40px;
+  margin-left: 0px;
+  }
+
+  #envelopImageHolder{
+    width: 100%;
+  }
+
+  #envelopImageHolder img{
+    width: 100%;
+    padding-top: 20px;
+    margin-left: -12%;
+  }
+
+  #contactHelloTextHolder{
+    width: 100%;
+    margin-left: 0%;
+  }
+
+#contactHelloTextHolder p{
+  padding-top: 0px;
+}
+
+
+
+
+/* ==========================================
+          CONTACT FROM HERE
+=========================================== */
+
+#contactFormInnerHolder{
+width: 90%;
+margin-left: 5%;
+}
+
+input,textarea{
+width: 90%;
+}
+
+/* ==========================================
+            404 FROM HERE
+=========================================== */
+h3{
+font-size: 18px;
+margin-left: 5%;
+}
+#header404Button{
+margin-left: 5%;
+}
+
+/* ==========================================
+                Portfolio
+=========================================== */
+#portfoiloHeaderHolder{
+  background: url("../Media/Portfolio/portfolio_main_imge_phone.jpg") no-repeat;
+  background-size: 100% 100%;
+  height: auto;
+  overflow: none;
+}
+
+#porfolioH1{
+  padding-bottom: 40vh;
+  padding-top: 40vh;
+}
+
+#holderForOcipText{
+  width: 90%;
+}
+
+#holderForBrowserImage{
+  width: 100%;
+}
+
+#holderForBrowserImage img{
+  margin-top: 0px;
+  margin-left: 5%;
+}
+
+#holderForPhoneImage{
+  width: 100%;
+  margin-left: 0px;
+}
+
+#holderForDaciText{
+  width: 90%;
+}
+
+#holderForPhoneImage img{
+  width: 40%;
+  margin-left: 30%;
+}
+
+#holderForOcipText h1, #holderForDaciText h1{
+  font-size: 60px;
+  margin-left: 0%;
+}
+
+
+}
